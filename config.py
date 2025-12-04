@@ -8,8 +8,8 @@ CAMERA_WIDTH = 640
 CAMERA_HEIGHT = 480
 
 # MediaPipe settings
-MIN_DETECTION_CONFIDENCE = 0.7
-MIN_TRACKING_CONFIDENCE = 0.5
+MIN_DETECTION_CONFIDENCE = 0.3  # Lowered for better detection
+MIN_TRACKING_CONFIDENCE = 0.3   # Lowered for better detection
 MAX_NUM_HANDS = 1  # Start with one hand for simplicity
 
 # Screen settings (will be auto-detected)
