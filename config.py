@@ -3,7 +3,7 @@ Configuration settings for hand-controlled mouse
 """
 
 # Camera settings
-CAMERA_INDEX = 0  # 0 for default webcam, change if using external camera
+CAMERA_INDEX = 1  # DroidCam found at index 1
 CAMERA_WIDTH = 640
 CAMERA_HEIGHT = 480
 
