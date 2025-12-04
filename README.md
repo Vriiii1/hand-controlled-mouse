@@ -61,6 +61,29 @@ cd hand-controlled-mouse
 pip install -r requirements.txt
 ```
 
+## 📱 Camera Setup
+
+**Important**: You need a webcam to use this application!
+
+### Option 1: Use iPhone as Webcam (Recommended)
+1. Install **EpocCam** or **DroidCam** on both iPhone and PC
+2. Connect both devices to the same WiFi
+3. Start the app on iPhone, then on PC
+4. See [CAMERA_SETUP.md](CAMERA_SETUP.md) for detailed instructions
+
+### Option 2: Use Built-in Webcam
+- Make sure no other apps are using the camera
+- The application should detect it automatically
+
+### Find Your Camera
+```bash
+# Find available cameras
+python find_camera.py
+
+# Test camera
+python test_camera.py
+```
+
 ## 🎮 Usage
 
 ```bash
