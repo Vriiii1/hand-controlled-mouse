@@ -40,7 +40,7 @@ class HandMouseController:
         self.position_filter = CombinedFilter(
             window_size=config.SMOOTHING_FRAMES,
             dead_zone=config.DEAD_ZONE,
-            alpha=0.5
+            alpha=0.3  # Lower alpha = smoother but slightly slower response
         )
         
         # State tracking

@@ -8,8 +8,8 @@ CAMERA_WIDTH = 640
 CAMERA_HEIGHT = 480
 
 # MediaPipe settings
-MIN_DETECTION_CONFIDENCE = 0.3  # Lowered for better detection
-MIN_TRACKING_CONFIDENCE = 0.3   # Lowered for better detection
+MIN_DETECTION_CONFIDENCE = 0.5  # Balanced for stability
+MIN_TRACKING_CONFIDENCE = 0.7   # Higher for smoother tracking
 MAX_NUM_HANDS = 1  # Start with one hand for simplicity
 
 # Screen settings (will be auto-detected)
@@ -22,11 +22,11 @@ FIST_THRESHOLD = 0.1    # Distance threshold for fist detection
 SCROLL_THRESHOLD = 30   # Pixel movement threshold for scroll activation
 
 # Smoothing settings
-SMOOTHING_FRAMES = 5    # Number of frames to average for position smoothing
-DEAD_ZONE = 5           # Minimum pixel movement to register
+SMOOTHING_FRAMES = 10   # Increased for smoother movement
+DEAD_ZONE = 8           # Reduced jitter
 
 # Mouse control settings
-MOUSE_SPEED_MULTIPLIER = 1.5  # Cursor movement speed
+MOUSE_SPEED_MULTIPLIER = 1.2  # Slightly slower for better control
 SCROLL_SPEED = 20             # Scroll speed in pixels
 
 # Debug settings
